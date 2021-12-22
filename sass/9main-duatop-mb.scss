@@ -15,13 +15,14 @@ $fontfam2: 'Arima Madurai', Roboto, sans-serif;
   --spacing: 30px;
   --colortablehead: #e4e4e4;
   --bs-gutter-x: 1.5rem;
+  --ratio:1;
 }
 .error {color: var(--colorerror) !important;}
 .green {color: var(--colorok) !important;}
 .gold {color: var(--color1) !important;}
 .blue {color: var(--colorlink) !important;}
 .main {color: var(--color1) !important;}
-body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position: top center, bottom center;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
 button {transition: all 0.3s ease-in-out !important;}
@@ -29,7 +30,7 @@ a:hover {text-decoration: none;}
 main {position: relative;}
 .container{max-width: 768px;}
 .wrapper {margin: 0 auto;position: relative;width:100%;}
-// #layout{width: 1920px;height:auto;transform-origin: top left;overflow: hidden;}
+#layout{height:auto;transform-origin: top left;overflow: hidden;margin-top: calc(116px * var(--ratio));}
 
 /*=Header=*/
 .header{position: relative;height: auto;
@@ -97,7 +98,38 @@ main {position: relative;}
   }
 }
 
-
+/*=Taigame + menu==*/
+.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
+  i{font-size: 2rem;text-align: left;}
+}
+.offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.jpg);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;max-width:70%;
+  .btn-close{filter: invert(1);}
+  .offcanvas-body{
+    .list-group{
+      .list-group-item{background: transparent;border-color:rgba(255,255,255,0.1);border-style: dotted;
+        a{color: var(--whitecolor);font-size: 1.1rem;
+          &:focus{color: var(--color1);}
+          i{width: 1rem;text-align: center;}
+        }
+      }
+    }
+  }
+}
+.download{background-color: #2d648d;border-bottom: 1px solid #ffffff80;
+  .container{display: flex;justify-content: space-between;align-items: center;
+    .left{display: flex;align-items: center;
+      .icongame{width:calc(100px * var(--ratio));}
+      .title-game{color: var(--whitecolor);
+        h4{font-size:calc(160% * var(--ratio));}
+      }
+    }
+    .right{
+      a{
+        img{width:calc(172px * var(--ratio));}
+      }
+    }
+  }
+}
 
 
 .style1::-webkit-scrollbar-track{border-radius: 10px;background-color:transparent;}
@@ -148,9 +180,11 @@ main {position: relative;}
   }
 }
 @media (max-width: 540px) {
+  :root {--ratio:0.8;}
   .bangxephang .container .khungbxh .khungin .tab-content table tr th img{max-width: 50%;}
 }
 @media (max-width: 414px) {
+  :root {--ratio:0.6;}
   .header .header-center .logo img{max-width: 50%;}
   body{background-size: 140%, 180%;}
   .footer .footer-content p{font-size: 12px;}

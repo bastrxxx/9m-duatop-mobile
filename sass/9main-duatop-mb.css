@@ -233,6 +233,7 @@
   --spacing: 30px;
   --colortablehead: #e4e4e4;
   --bs-gutter-x: 1.5rem;
+  --ratio:1;
 }
 
 .error {
@@ -264,7 +265,7 @@ body {
   background-image: url(../images/bg-top.webp), url(../images/bg-footer.webp);
   background-size: 100%;
   background-repeat: no-repeat no-repeat;
-  background-position: top center, bottom center;
+  background-position: center calc(116px * var(--ratio)), bottom center;
 }
 
 * {
@@ -303,6 +304,14 @@ main {
   margin: 0 auto;
   position: relative;
   width: 100%;
+}
+
+#layout {
+  height: auto;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  overflow: hidden;
+  margin-top: calc(116px * var(--ratio));
 }
 
 /*=Header=*/
@@ -545,6 +554,103 @@ main {
   text-align: center;
 }
 
+/*=Taigame + menu==*/
+.btnlist {
+  text-align: center;
+  z-index: 15;
+  left: 0;
+  top: calc(130px * var(--ratio));
+  color: #1d3355;
+  -webkit-filter: drop-shadow(0px 0px 1px #ffffff);
+          filter: drop-shadow(0px 0px 1px #ffffff);
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: transparent;
+}
+
+.btnlist i {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.offcanvas {
+  color: var(--whitecolor);
+  background-color: #102331;
+  background-image: url(../images/bg-bot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  max-width: 70%;
+}
+
+.offcanvas .btn-close {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.offcanvas .offcanvas-body .list-group .list-group-item {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.1);
+  border-style: dotted;
+}
+
+.offcanvas .offcanvas-body .list-group .list-group-item a {
+  color: var(--whitecolor);
+  font-size: 1.1rem;
+}
+
+.offcanvas .offcanvas-body .list-group .list-group-item a:focus {
+  color: var(--color1);
+}
+
+.offcanvas .offcanvas-body .list-group .list-group-item a i {
+  width: 1rem;
+  text-align: center;
+}
+
+.download {
+  background-color: #2d648d;
+  border-bottom: 1px solid #ffffff80;
+}
+
+.download .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.download .container .left .icongame {
+  width: calc(100px * var(--ratio));
+}
+
+.download .container .left .title-game {
+  color: var(--whitecolor);
+}
+
+.download .container .left .title-game h4 {
+  font-size: calc(160% * var(--ratio));
+}
+
+.download .container .right a img {
+  width: calc(172px * var(--ratio));
+}
+
 .style1::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: transparent;
@@ -677,12 +783,18 @@ main {
 }
 
 @media (max-width: 540px) {
+  :root {
+    --ratio:0.8;
+  }
   .bangxephang .container .khungbxh .khungin .tab-content table tr th img {
     max-width: 50%;
   }
 }
 
 @media (max-width: 414px) {
+  :root {
+    --ratio:0.6;
+  }
   .header .header-center .logo img {
     max-width: 50%;
   }
