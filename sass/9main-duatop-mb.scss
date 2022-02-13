@@ -22,7 +22,7 @@ $fontfam2: 'Arima Madurai', Roboto, sans-serif;
 .gold {color: var(--color1) !important;}
 .blue {color: var(--colorlink) !important;}
 .main {color: var(--color1) !important;}
-body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.webp), url(../images/bg-footer.webp);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
+body {font-family: $fontfam;font-size: 14px;font-weight: 400;color: var(--color2);background:#f9fdfe;background-image:url(../images/bg-top.jpg), url(../images/bg-footer.jpg);background-size: 100%;background-repeat: no-repeat no-repeat;background-position:center calc(116px * var(--ratio)), bottom center;}
 * {outline: none;box-sizing: border-box;padding: 0;margin: 0;border:none;}
 a {text-decoration: none;transition: all 0.3s ease-in-out;}
 button {transition: all 0.3s ease-in-out !important;}
@@ -74,9 +74,9 @@ main {position: relative;}
 }
 
 /*==Bang xep hang====*/
-.bangxephang{width: 100%;height: auto;background: url(../images/bg-3.webp) no-repeat top center;
+.bangxephang{width: 100%;height: auto;
   .container{
-    .titlebxh{background:url(../images/title-bxh.webp) no-repeat top center;background-size: 100%;height: 46.23vw;position: relative;z-index: 14;max-height:355px;
+    .titlebxh{background:url(../images/title-bxh.png) no-repeat top center;background-size: 100%;height: 46.23vw;position: relative;z-index: 14;max-height:355px;
       .dateend{position: relative;top: 160px;}
     }
     .khungbxh{position:relative;z-index: 15;background: url(../images/bgbxhtop.jpg), url(../images/bgbxhbot.jpg), url(../images/bgbxhmid.jpg);background-repeat: no-repeat, no-repeat, repeat-y;background-position: top center, bottom center, center center;height: 100%;width: 100%;background-size:100%;margin-top: -164px;

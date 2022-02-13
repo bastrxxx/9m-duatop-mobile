@@ -262,7 +262,7 @@ body {
   font-weight: 400;
   color: var(--color2);
   background: #f9fdfe;
-  background-image: url(../images/bg-top.webp), url(../images/bg-footer.webp);
+  background-image: url(../images/bg-top.jpg), url(../images/bg-footer.jpg);
   background-size: 100%;
   background-repeat: no-repeat no-repeat;
   background-position: center calc(116px * var(--ratio)), bottom center;
@@ -466,11 +466,10 @@ main {
 .bangxephang {
   width: 100%;
   height: auto;
-  background: url(../images/bg-3.webp) no-repeat top center;
 }
 
 .bangxephang .container .titlebxh {
-  background: url(../images/title-bxh.webp) no-repeat top center;
+  background: url(../images/title-bxh.png) no-repeat top center;
   background-size: 100%;
   height: 46.23vw;
   position: relative;
