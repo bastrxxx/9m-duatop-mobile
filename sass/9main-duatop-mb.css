@@ -338,8 +338,16 @@ main {
           flex-direction: column;
 }
 
+.header .header-center .logo {
+  display: block;
+}
+
 .header .header-center .logo img {
   max-width: 100%;
+}
+
+.header .header-center a {
+  display: block;
 }
 
 .header .header-center a img {
@@ -375,6 +383,7 @@ main {
 
 .header .header-center a.qua {
   margin-top: -2rem;
+  display: block;
 }
 
 /*==chuoisukien*/
@@ -520,6 +529,7 @@ main {
   background: transparent;
   width: 50%;
   padding: 0;
+  display: block;
 }
 
 .bangxephang .container .khungbxh .khungin .nav a:hover, .bangxephang .container .khungbxh .khungin .nav a.active {

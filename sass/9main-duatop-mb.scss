@@ -35,17 +35,17 @@ main {position: relative;}
 /*=Header=*/
 .header{position: relative;height: auto;
   .header-center{z-index: 9;position: relative;display: flex;align-items:center;justify-content: center;flex-direction: column;
-    .logo{
+    .logo{display: block;
       img{max-width: 100%;}
     }
-    a{
+    a{display: block;
       img{max-width: 100%;}
     }
     a.naptien{position: relative;max-width: 100%;margin: 0 auto;display: block;
       img{max-width: 100%;}
       .light{position:absolute;top:0;left:0;z-index:2;overflow:hidden;-webkit-filter:brightness(2);filter:brightness(2);-webkit-mask-size:300% 200%;mask-size:300% 200%;-webkit-mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 30%,#fff 50%,rgba(255,255,255,0) 60%);mask-image:-webkit-linear-gradient(-60deg,rgba(255,255,255,0) 40%,#fff 50%,rgba(255,255,255,0) 60%);-webkit-animation:laluot linear 2.5s infinite 1s;animation:laluot linear 2.5s infinite 1s;}
     }
-    a.qua{margin-top: -2rem;}
+    a.qua{margin-top: -2rem;display: block;}
   }
 }
 
@@ -82,7 +82,7 @@ main {position: relative;}
     .khungbxh{position:relative;z-index: 15;background: url(../images/bgbxhtop.jpg), url(../images/bgbxhbot.jpg), url(../images/bgbxhmid.jpg);background-repeat: no-repeat, no-repeat, repeat-y;background-position: top center, bottom center, center center;height: 100%;width: 100%;background-size:100%;margin-top: -164px;
       .khungin{width: 95%;position: relative;padding-top:2vw;
         .nav{display: flex;justify-content: center;align-items: center;
-          a{transition:0.2s ease;filter: grayscale(1);background: transparent;width: 50%;padding:0;
+          a{transition:0.2s ease;filter: grayscale(1);background: transparent;width: 50%;padding:0;display:block;
             &:hover, &.active{filter: hue-rotate(0deg);animation: filter 2000ms infinite ease-in-out;}
             img{background: transparent;max-width: 100%;}
           }
