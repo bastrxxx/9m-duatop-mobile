@@ -545,8 +545,8 @@ main {
 }
 
 .bangxephang .container .khungbxh .khungin .nav a img {
-  background: transparent;
   max-width: 100%;
+  display: block;
 }
 
 .bangxephang .container .khungbxh .khungin .tab-content {
@@ -580,7 +580,6 @@ main {
   width: 50px;
   height: 50px;
   display: block;
-  background: transparent;
   max-width: 100%;
 }
 
