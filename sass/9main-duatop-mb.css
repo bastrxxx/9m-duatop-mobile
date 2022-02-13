@@ -339,27 +339,20 @@ main {
   overflow: hidden;
 }
 
-.header .header-center .logo {
-  display: block;
-  margin-top: 2rem;
-  clear: both;
-}
-
-.header .header-center .logo img {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-}
-
 .header .header-center a {
   display: block;
   clear: both;
+  max-width: 100%;
 }
 
 .header .header-center a img {
   max-width: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.header .header-center .logo {
+  margin-top: 2rem;
 }
 
 .header .header-center a.naptien {
