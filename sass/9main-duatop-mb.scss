@@ -82,7 +82,7 @@ main {position: relative;}
     .khungbxh{position:relative;z-index: 15;background: url(../images/bgbxhtop.jpg), url(../images/bgbxhbot.jpg), url(../images/bgbxhmid.jpg);background-repeat: no-repeat, no-repeat, repeat-y;background-position: top center, bottom center, center center;height: 100%;width: 100%;background-size:100%;margin-top: -164px;
       .khungin{width: 95%;position: relative;padding-top:2vw;
         .nav{display: flex;justify-content: center;align-items: center;
-          a{transition:0.2s ease;filter: grayscale(1);background: transparent;width: 50%;padding:0;display:block;
+          a{transition:0.2s ease;filter: grayscale(1);background: transparent;width: 50%;padding:0;display:block;max-width:100%;
             &:hover, &.active{filter: hue-rotate(0deg);animation: filter 2000ms infinite ease-in-out;}
             img{background: transparent;max-width: 100%;}
           }
@@ -99,7 +99,7 @@ main {position: relative;}
 }
 
 /*=Taigame + menu==*/
-.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;
+.btnlist{text-align: center;z-index: 15;left: 0;top: calc(130px * var(--ratio));color:#1d3355;filter: drop-shadow(0px 0px 1px #ffffff);width: 50px;height: 50px;display: block;background: transparent;max-width:100%;
   i{font-size: 2rem;text-align: left;}
 }
 .offcanvas{color: var(--whitecolor);background-color:#102331;background-image: url(../images/bg-bot.jpg);background-repeat: no-repeat;background-size: cover;background-blend-mode: overlay;max-width:70%;
